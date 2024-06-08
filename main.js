@@ -17,10 +17,10 @@ app.use(bodyParser.json())
 
 // ---------------- Endpoint -------------------
 // con 'get' le indicamos que nuestra API acepta
-// el method GET.
+// el metodo GET.
 // El primer parametro establece el path (ruta) del
-// codigo que queremos ejecutar
-// El segundo parametro establece el codigo a ejecutar
+// código que queremos ejecutar
+// El segundo parametro establece el código a ejecutar
 // en forma de callback
 // - el callback recibe 2 parametros:
 // - req: request o la peticion
@@ -43,7 +43,7 @@ app.get('/api/v1/usuarios', async (req, res) => {
     
     console.log(listaUsuario)
 
-    //5. Cerrar la consulta
+    //5. Cerrar la consulta y conexión a la BD
     await client.close()
 
 
